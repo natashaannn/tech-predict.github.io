@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.24.0/d3-legend.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<title>Prediction of Technology Trajectories: The Internet as a Case Study</title>
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<body class="w3-black">
+  <!-- Icon Bar (Sidebar - hidden on small screens) -->
+  <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+      <p>HOME</p>
+    </a>
+    <a href="#research-area" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+      <p>RESEARCH AREA</p>
+    </a>
+    <a href="#ideas" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+      <p>IDEAS</p>
+    </a>
+    <a href="#method" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+      <p>RESEARCH METHOD</p>
+    </a>
+    <a href="#findings" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+      <p>FINDINGS</p>
+    </a>
+  </nav>
+
+  <!-- Navbar on small screens (Hidden on medium and large screens) -->
+  <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+    <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+      <a href="#" class="w3-bar-item w3-button" style="width:20% !important">HOME</a>
+      <a href="#research-area" class="w3-bar-item w3-button" style="width:20% !important">RESEARCH AREA</a>
+      <a href="#ideas" class="w3-bar-item w3-button" style="width:20% !important">IDEAS</a>
+      <a href="#method" class="w3-bar-item w3-button" style="width:20% !important">METHOD</a>
+      <a href="#findings" class="w3-bar-item w3-button" style="width:20% !important">FINDINGS</a>
+    </div>
+  </div>
+
+  <!-- Page Content -->
+  <div class="w3-padding-large" id="main">
+
+    <!-- Header/Home -->
+    <header class="w3-container w3-padding-32 w3-center w3-black" id="#">
+      <h1 class="w3-jumbo"><span class="w3-hide-small">Prediction of Technology Trajectories:</span> The Internet as a Case Study.</h1>
+      <p> <a href="http://www.iri.ucla.edu/">A UCLA Internet Research Initiative Project.</a></p>
+    </header>
+
+    <!-- About -->
+    <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="research-area">
+      <h2 class="w3-text-light-grey">Research Area</h2>
+      <hr style="width:200px" class="w3-opacity">
+      <p>The spread of new ideas and technology is often a seemingly unpredictable phenomenon. One minute, a technology is a novelty that only a few enthusiasts talk about; the next minute, it explodes into something that even the layman knows by heart. The rapidity at which a technology is adopted has only intensified with the increasing interconnectedness among people, companies and governments worldwide as a result of globalization. This unpredictability is exacerbated with uncertainty over which spheres of knowledge a technology is likely to disrupt, where a sphere of knowledge refers to a collection of knowledge regarding an area of expertise, while a technology refers to an application of knowledge. The relationship between knowledge spheres and technology is explicit; different spheres of knowledge contribute directly to the development of technologies, which in itself are applications of its related knowledge spheres. An understanding of the impact that the diffusion of a technology may have on knowledge spheres can make or break the decisions made by key stakeholders of economies, namely, innovators, businessmen, investors and policymakers.
+      <br><br>
+      The significance of the impact of technological diffusion on knowledge spheres is clear for innovators. Knowledge spheres represent domains of innovation for innovators. By understanding technological expansion trajectories, innovators can gain from the suggestion of new design opportunities and directions. For businessmen and investors, knowledge spheres translate into types of industries. An accurate identification of an industry that  is likely to experience a disruption from an emerging technology can allow a businessman to adapt his operations accordingly and aid an investor in allocating his assets, both of which will allow these stakeholders to reap enormous benefits. Conversely, a businessman or investor who fails to foresee a disruption of an industry by an emerging technology may fail to react in time during its onset. In turn, a business may find themselves losing their competitive edge, or worse, may eventually be forced out of business. It is also no surprise that technological change can make or break an entire economy. Given the right government policies to steer an economy in the right direction to adopt a certain technology, a country can experience an unprecedented surge in economic growth that may set the path for further development. A misjudgment of policies could also lead an economy in the opposite direction of economic growth.
+      <br><br>
+      It is arguably unthinkable that these decisions, which are based on nothing more than intuition and luck, could mean the difference between thriving and shutting down for a company and between an economic boom and possibly an economic downturn for a country. It would be greatly instrumental if a predictor for the pace and pattern of technological adoption were available to reduce the level of uncertainty in the decision-making process. Today, we are anticipating the same rapidity and uncertainty regarding the technological adoption of emerging technologies such as artificial intelligence, internet of things and blockchain. Can a prediction method for how, when and where these technologies will spread be developed to aid innovators, investors, businessmen and policymakers?
+    </div>
+
+    <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="ideas">
+      <h2 class="w3-text-light-grey">Ideas</h2>
+      <hr style="width:200px" class="w3-opacity">
+      <h3>Knowledge Space and Technological Relatedness</h3>
+      <p>While a seemingly intangible subject, patent data allows for an in-depth study of knowledge and technology. Patents are intellectual property rights granted to an innovator over a unique invention, and can be viewed as a tangible materialization of knowledge. Patents are further categorized into patent technology classes according to patent classification systems, such as the Cooperative Patent Classification (CPC) system. Each of these classes represent a sphere of knowledge, which can range from apparel to electric heating. Due to its availability and accessibility, patent data has been increasingly used by researchers to study knowledge and technology.
+      <br><br>
+      <img src="https://www.tandfonline.com/na101/home/literatum/publisher/tandf/journals/content/ceps20/2013/ceps20.v021.i09/09654313.2012.755832/20130917/images/large/ceps_a_755832_o_f0001g.jpeg">
+      <b>Fig. 1. US knowledge space. (a) 1975, (b) 1985, (c) 1995 and (d) 2005.
+        <br>
+        Notes: Black = Chemicals (1), Green = Computers = Communications (2), Yellow = Drugs & Medical (3), Red = Electronics (4), Blue = Mechanical (5), Grey = Miscellaneous (6).
+      </b>
+      <br><br>
+      In their paper titled ""<a href="https://www.tandfonline.com/doi/full/10.1080/09654313.2012.755832?casa_token=a2xoBhHlEdkAAAAA%3A7nFm23eFMLTiX-2x6gInQsoRxLX0bHBUmRF2d-o42NGJMaMhk4r0-TsS0us_Poh5R891LHsXakUz_28">Mapping knowledge space and technological relatedness in US cities<a>,”  Kogler, Rigby and Tucker create a measure of technological relatedness using patent data from the United States Patent and Trademark Office (USPTO). The measure of technological relatedness is an index for how “close” in proximity two patent classes are, and is determined by the number of patents that are co-classified within the patent classes. By determining the technological relatedness between every pair of patent classes out of the 438 primary patent classes, they were able to produce a map of the US knowledge space at different periods of time as seen in Figure 1.
+      <br><br>
+      They go on to complement the US knowledge space and the technological relatedness data with data on inventor locations to determine the relative competitive advantage that each city in the US possesses, thus making a case for the spread of innovation based on the relative competitive advantage of a specific geographical location.
+      <br><br>
+      This demonstrates the possibility of mapping out the relatedness of two spheres of knowledge to build an overall network of the spheres of knowledge, where each sphere is connected to another by their established knowledge relatedness. In doing so, a knowledge space is created.
+      </p>
+      <br>
+      <h3>Analysis of Expansion Trajectories</h3>
+      <p>
+      <img src="https://media.springernature.com/lw685/springer-static/image/art%3A10.1007%2Fs00163-019-00312-w/MediaObjects/163_2019_312_Fig4_HTML.png?as=webp">
+      <b>Fig. 2. Total technology space map overlaid with the HEV design knowledge base and its most likely expansion paths. The map includes the IPC class ID, title and entered year of each HEV’s historical technology entry</b>
+      <br><br>
+      In "<a href="https://link.springer.com/article/10.1007/s00163-019-00312-w">Overlay technology space map for analyzing design knowledge base of a technology domain: the case of hybrid electric vehicles</a>," Song et al. takes the knowledge space one step further and use it to analyze the expansion trajectories of technologies into spheres of knowledge beyond the present spheres of knowledge they belong in. Their paper introduces a “network-based methodology for visualizing and analyzing the structure and expansion trajectories of the design knowledge base of a given technology domain.” Using hybrid electric vehicles (HEVs) as the technology domain to be studied, they first retrieved the set of patents related to HEVs and determined the patent classes that those patents fell under. Those patent classes would make up the “design knowledge base” of the HEV domain. Taking the patent classes in the design knowledge base, they proceeded to highlight them on the overall knowledge space map similar to the one created in Kogler, Rigby and Tucker’s research. Thereafter, they identified the strongest links from those highlighted spheres of knowledge to other spheres of knowledge on the knowledge space, as can be seen in Figure 2. Those strongest links together hence suggested the most likely paths through which the technology would have expanded from earlier-covered to later-covered spheres of knowledge.
+      <br><br>
+      According to Song et al., In particular, those unexplored spheres of knowledge that have the highest relatedness to the established design knowledge base of a domain may present most feasible opportunities for technological expansion, because the high innate knowledge relatedness would enable the ease for innovators in the domain to comprehend these unexplored spheres of knowledge.
+      </p>
+      <br>
+      <h3>Research Questions and Hypothesis</h3>
+      <p>This research project will recreate the overlay technology space map used by Song et al. and test its accuracy as a prediction method for technological expansion trajectories. Internet technology will be used as the case study for this prediction method, due to the extensiveness and availability of patents pertaining to the Internet. It will answer the following questions:
+        <br><br>
+        <i>Is the technological relatedness of a pair of knowledge spheres positively related to the predictability of a technology that appears only in one of the pair of knowledge spheres?</i>
+        <br><br>
+        <i>If so, can this knowledge be used to develop a practical method of prediction for future technology trajectories?</i>
+      </p>
+    </div>
+
+    <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="method">
+      <h2 class="w3-text-light-grey">Research Methodology</h2>
+      <hr style="width:200px" class="w3-opacity">
+      <p>Some text about me. Some text about me. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </p>
+    </div>
+
+    <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="findings">
+      <h2 class="w3-text-light-grey">Findings</h2>
+      <hr style="width:200px" class="w3-opacity">
+
+        <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="network">
+          <h3 class="w3-text-light-grey">Technology Relatedness Network Graph</h3>
+          <hr style="width:200px" class="w3-opacity">
+          <div id="network_graph"></div>
+          <p>Some text about me. Some text about me. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+            adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+        </div>
+
+    </div>
+
+  <script src="network.js"></script>
+</body>
+</html>

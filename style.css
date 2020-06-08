@@ -1,0 +1,53 @@
+/* body */
+body, html {
+  height: 100%;
+}
+
+body, h1,h2,h3,h4,h5,h6 {font-family: monospace;}
+
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+
+img {
+  max-width:100%;
+  max-height:100%;
+  display:block;
+}
+
+/* network graph */
+circle {
+stroke: #fff;
+stroke-width: 0.5;
+}
+
+.node:hover {
+stroke: black;
+stroke-width: 0.8;
+}
+
+.link {
+stroke: #999;
+stroke-opacity: 0.6;
+stroke-width: 0.1;
+}
+
+text {
+cursor: move;
+font-size: 12px;
+font-family: monospace;
+text-shadow: 1px 1px 2px black;
+}
+
+.tooltip {
+font-family: Arial, Helvetica, sans-serif;
+background-color: white;
+border-radius: 5px;
+padding: 10px;
+color: black;
+position: absolute;
+}

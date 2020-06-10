@@ -5,14 +5,95 @@ body, html {
 
 body, h1,h2,h3,h4,h5,h6 {font-family: monospace;}
 
-.w3-row-padding img {margin-bottom: 12px}
-/* Set the width of the sidebar to 120px */
-.w3-sidebar {width: 120px;background: #222;}
-/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-#main {margin-left: 120px}
-/* Remove margins from "page content" on small screens */
-@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+.w3-row-padding img {
+  margin-bottom: 12px
+}
 
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {
+  width: 120px;background: #222;
+}
+
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {
+  margin-left: 120px;
+}
+
+.w3-display-left {
+  left: 120px;
+}
+
+mark {
+  background: yellow;
+  color: black;
+  opacity: 0.7;
+}
+
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {
+  #main {margin-left: 0}
+  .w3-display-left {left: 0 }
+}
+
+/* slideshow */
+
+#slideshow div {
+  position: absolute;
+  display: none;
+  top: 3%;
+  background: black;
+}
+
+#slideshow div:first-child {
+  display:block
+}
+
+#slideshow > div {
+  max-width: 100%;
+  height:100%;
+}
+
+.grid-container {
+  display: grid !important;
+  position: relative !important;
+  grid-template-columns: auto auto;
+  max-width: 98%;
+}
+
+.grid-item {
+  position: relative !important;
+  display: block !important;
+  align-content: center;
+  border: 1px solid white;
+  padding: 0px 5px 0px 3px;
+}
+
+.w3-ul {
+  border-bottom-color: white;
+}
+
+#slide3 {
+  font-size: 12px;
+}
+
+table {
+  max-width:98%;
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+}
+
+.w3-table td {
+  border: 1px solid white;
+  text-align: center;
+  padding: 5px;
+}
+
+#slide4 {
+  display: block;
+}
+
+
+/* datavis */
 img, .datavis {
   max-width:100%;
   max-height:100%;
@@ -44,10 +125,10 @@ text-shadow: 1px 1px 2px black;
 }
 
 .tooltip {
-font-family: Arial, Helvetica, sans-serif;
-background-color: white;
+font-family: monospace;
+background: white;
+color: black;
 border-radius: 5px;
 padding: 10px;
-color: black;
 position: absolute;
 }

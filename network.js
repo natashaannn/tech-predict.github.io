@@ -1,11 +1,12 @@
 const margin = {
-  top: 10,
-  bottom: 10,
-  left: 20,
-  right: 20,
+  top: 3,
+  bottom: 3,
+  left: 10,
+  right: 10,
 };
-const width = 1000 - margin.left - margin.right;
-const height = 640 - margin.top - margin.bottom;
+
+const width = document.getElementById('slide1').offsetWidth; - margin.left - margin.right;
+const height = document.getElementById('slide1').offsetHeight; - margin.top - margin.bottom;
 
 const svg = d3
   .select("#network_graph")
@@ -31,19 +32,19 @@ d3.json("json/1980.json").then((data) => {
   const link = svg.selectAll(".link")
     .data(data.links)
     .join((enter) => enter
-    .append("line")
-    .attr("class", "link"))
+      .append("line")
+      .attr("class", "link"));
 
   link.append("title")
     .text(d => d.weight)
-    .attr("fill", "black");
+    .attr("fill", "white");
 
   // create a tooltip
   // -1- Create a tooltip div that is hidden by default:
   const tooltip = d3
     .select("#network_graph")
     .append("div")
-      .style("opacity", 0)
+      .style("opacity", 0.5)
       .attr("class", "tooltip");
 
   // -2- Create 3 functions to show / update (when mouse move but stay on same circle) / hide the tooltip
@@ -138,23 +139,24 @@ d3.json("json/1980.json").then((data) => {
     .call(legendSequential);
 
   // A slider (using only d3 and HTML5) that removes nodes below the input threshold.
-  const slider = d3.select('body').append('p').text('Year: ');
-
-  slider.append('label')
-  .attr('for', 'threshold')
-  .text('1980');
-  slider.append('input')
-    .attr('type', 'range')
-    .attr('min', 1980)
-    .attr('max', 1990)
-    .attr('value')
-    .attr('id', 'threshold')
-  .style('width', '50%')
-  .style('display', 'block')
-  .on('input', function () {
-    var year = this.value;
-
-    d3.select('label').text(year);
+  // const slider = d3.select('body').append('p').text('Year: ');
+  //
+  // slider.append('label')
+  // .attr('for', 'threshold')
+  // .text('1980');
+  //
+  // slider.append('input')
+  //   .attr('type', 'range')
+  //   .attr('min', 1980)
+  //   .attr('max', 1990)
+  //   .attr('value')
+  //   .attr('id', 'threshold')
+  // .style('width', '50%')
+  // .style('display', 'block')
+  // .on('input', function () {
+  //   var year = this.value;
+  //
+  //   d3.select('label').text(year);
 
     // // Find the links that are at or above the threshold.
     // var newData = [];
@@ -177,5 +179,5 @@ d3.json("json/1980.json").then((data) => {
     //
     // simulation.alphaTarget(0.1).restart();
 
-  });
+  // });
 });

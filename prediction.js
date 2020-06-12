@@ -1,4 +1,4 @@
-function init_network()  {
+function init_prediction() {
   const margin = {
     top: 3,
     bottom: 3,
@@ -10,7 +10,7 @@ function init_network()  {
   const height = document.getElementById('slide1').offsetHeight; - margin.top - margin.bottom;
 
   const svg = d3
-    .select("#network_graph")
+    .select("#prediction_graph")
     .append("svg")
       .attr("width", width + margin.left + margin.right)
       .attr("height", height + margin.top + margin.bottom)
@@ -43,7 +43,7 @@ function init_network()  {
     // create a tooltip
     // -1- Create a tooltip div that is hidden by default:
     const tooltip = d3
-      .select("#network_graph")
+      .select("#prediction_graph")
       .append("div")
         .style("opacity", 0.5)
         .attr("class", "tooltip");
@@ -96,8 +96,9 @@ function init_network()  {
       .attr("dy", "0.35em")
       .text(function(d){ return d.subsection_id; });
 
-    node.style("fill", (d) => color(d.section_id));
-    text.style("fill", (d) => color(d.section_id));
+
+    node.style("fill", function (d) { if (d.status == "predicted") {return '#b19cd9'} else if (d.status == "existing") {return '#8E44AD'} else {return '#808080'};});
+    text.style("fill", function (d) { if (d.status == "predicted") {return '#b19cd9'} else if (d.status == "existing") {return '#8E44AD'} else {return '#808080'};});
 
     function dragstarted(d) {
         if (!d3.event.active) simulation.alphaTarget(0.3).restart();//sets the current target alpha to the specified number in the range [0,1].
@@ -183,5 +184,4 @@ function init_network()  {
     // });
   });
 }
-
-init_network();
+init_prediction();

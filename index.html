@@ -59,40 +59,24 @@
         </div>
 
         <div id="slide2" class="slide">
-          <div class="grid-container">
-            <div class="grid-item">
-              <h3><a href="#research-area">Research Area</a></h3>
-              <p>Using the internet as a case study, this study introduces a data-driven method to <mark>predict technology expansion trajectories</mark> based on the <mark><i>knowledge relatedness</i> between <i>spheres of knowledge</i></mark> (patent classes) calculated using patent data from the United States Patent and Trademark Office (USPTO) and the Cooperative Patent Classification (CPC) system.</p>
-            </div>
-            <div class="grid-item">
-              <h3><a href="#ideas">Ideas</a></h3>
-              <ul class="w3-ul">
-                <li><mark>Use of <i>knowledge relatedness</i></mark> as a determinant for the expansion trajectories of a certain technology</i></li>
-                <li><mark>Use of the Internet</mark> as a test case for the prediction method due to high volumes of Internet patenting activity</i>
-              </ul>
-            </div>
-            <div class="grid-item">
-              <h3><a href="#method">Method</a></h3>
-              <ul class="w3-ul">
-                <li><mark>Calculation of <i>knowledge relatedness</i></mark> between <i>spheres of knowledge</i> for 1980 to 2018</li>
-                <li><mark>Retrieval of internet patents</mark> and their associated patent classes using keyword search</li>
-                <li><mark>Assigning predictions</mark> as <i>spheres of knowledge</i> with <i>knowledge relatedness</i> (relative to those associated to internet patents) higher than a predetermined threshold</li>
-                <li><mark>Testing the prediction accuracy</mark> and optimal prediction thresholds using the <i>ROC curve</i></li>
-              </ul>
-            </div>
-            <div class="grid-item">
-              <h3><a href="#findings">Findings</a></h3>
-              <p>There is an overall <mark>positive correlation</mark> between knowledge relatedness and the predictability of expansion trajectories; however, further refinements to increase the prediction accuracy is still necessary for it to be used as a <mark>practical tool for prediction</mark>.</p>
-              <ul class="w3-ul">
-                <li>The prediction method has an <mark>average accuracy of 74%</mark> between 1980 and 2004</li>
-                <li>Accuracy drops drastically past 2005, likely as a result of a <mark>critical saturation of internet technology</mark> across spheres of knowledge</li>
-              </ul>
-            </div>
-          </div>
-
+          <h1 class="w3-center w3-jumbo w3-padding-32"><span>Technology:</span><br><br>An application of <mark><b>knowledge</b></mark></h1>
         </div>
 
         <div id="slide3" class="slide">
+          <h1 class="w3-jumbo w3-center"><span>Internet</span></h1>
+          <div class="grid-container">
+            <div class="grid-item">
+              <h2 class="w3-center w3-jumbo" style="position: absolute; background:black; margin-left: auto; margin-right: auto; max-height: 100%;">Lighting</h2>
+              <img src="https://cf.shopee.sg/file/2b1fdd2d025604b09076b9bf7fa7930c">
+            </div>
+            <div class="grid-item">
+              <h2 class="w3-center w3-jumbo" style="position: absolute; background:black;">Transport</h2>
+              <img src="https://specials-images.forbesimg.com/imageserve/1003535728/960x0.jpg?fit=scale">
+            </div>
+          </div>
+        </div>
+
+        <div id="slide4" class="slide" style="font-size: 12px;">
           <HR>
           <TABLE width="100%">
             <TR>
@@ -199,28 +183,63 @@
              </TABLE>
         </div>
 
-        <div id="slide4" class="slide">
-          <h3>Co-classification Matrix</h3>
+        <div id="slide5" class="slide">
+          <div class="grid-container">
+            <div class="grid-item grid-hover-item">
+              <h3><a href="#research-area">Research Area</a></h3>
+              <p>Using the internet as a case study, this study introduces a data-driven method to <mark>predict technology expansion trajectories</mark> based on the <mark><i>knowledge relatedness</i></mark> between patent classes calculated using patent data from the United States Patent and Trademark Office (USPTO) and the Cooperative Patent Classification (CPC) system.</p>
+            </div>
+            <div class="grid-item grid-hover-item">
+              <h3><a href="#ideas">Ideas</a></h3>
+              <ul class="w3-ul">
+                <li><mark>Use of <i>knowledge relatedness</i></mark> as a determinant for the expansion trajectories of a certain technology</i></li>
+                <li><mark>Use of the Internet</mark> as a test case for the prediction method due to high volumes of Internet patenting activity</i>
+              </ul>
+            </div>
+            <div class="grid-item grid-hover-item">
+              <h3><a href="#method">Method</a></h3>
+              <ul class="w3-ul">
+                <li><mark>Calculation of <i>knowledge relatedness</i></mark> between <i>spheres of knowledge</i> for 1980 to 2018</li>
+                <li><mark>Retrieval of internet patents</mark> and their associated patent classes using keyword search</li>
+                <li><mark>Assigning predictions</mark> as <i>spheres of knowledge</i> with <i>knowledge relatedness</i> (relative to those associated to internet patents) higher than a predetermined threshold</li>
+                <li><mark>Testing the prediction accuracy</mark> and optimal prediction thresholds using the <i>ROC curve</i></li>
+              </ul>
+            </div>
+            <div class="grid-item grid-hover-item">
+              <h3><a href="#findings">Findings</a></h3>
+              <ul class="w3-ul">
+                <li>There is an overall <mark>positive correlation</mark> between knowledge relatedness and the predictability of expansion trajectories</li>
+                <li>The mean optimal prediction threshold is at a knowledge relatedness of <mark>0.22</mark></li>
+                <li>The prediction method has an <mark>average accuracy of 74%</mark> between 1980 and 2004</li>
+                <li>Accuracy drops drastically past 2005, likely as a result of a <mark>critical saturation of internet technology</mark> in the knowledge space</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+        <div id="slide6" class="slide">
+          <h3 class="w3-center w3-jumbo">Knowledge relatedness Matrix</h3>
           <table class="w3-table" style="margin-left: auto !important; margin-right: auto!important; border: 1px solid white;">
             <tr class="w3-">
               <td></td>
               <td>A21</td>
               <td>...</td>
               <td>H04</td>
-              <td><mark>H05</mark></td>
+              <td>H05</td>
               <td>H06</td>
               <td>...</td>
               <td>Y04</td>
             </tr>
             <tr>
               <td>A21</td>
-              <td>0</td>
+              <td>0.33</td>
               <td>...</td>
-              <td>0</td>
-              <td>0</td>
-              <td>0</td>
+              <td>0.27</td>
+              <td>0.15</td>
+              <td>0.01</td>
               <td>...</td>
-              <td>0</td>
+              <td>0.20</td>
             </tr>
             <tr>
               <td>:</td>
@@ -234,20 +253,20 @@
             </tr>
             <tr>
               <td>G05</td>
-              <td>0</td>
+              <td>0.11</td>
               <td>...</td>
-              <td>0</td>
-              <td>0</td>
-              <td>0</td>
+              <td>0.08</td>
+              <td>0.12</td>
+              <td>0.23</td>
               <td>...</td>
-              <td>0</td>
+              <td>0.01</td>
             </tr>
             <tr>
-              <td><mark>G06</mark></td>
+              <td>G06</td>
               <td>0</td>
               <td>...</td>
-              <td>0</td>
-              <td><mark>1</mark></td>
+              <td>0.04</td>
+              <td>0.1</td>
               <td>0</td>
               <td>...</td>
               <td>0</td>
@@ -256,11 +275,11 @@
               <td>G07</td>
               <td>0</td>
               <td>...</td>
-              <td>0</td>
-              <td>0</td>
+              <td>0.30</td>
+              <td>0.13</td>
               <td>0</td>
               <td>...</td>
-              <td>0</td>
+              <td>0.07</td>
             </tr>
             <tr>
               <td>:</td>
@@ -277,193 +296,49 @@
               <td>0</td>
               <td>...</td>
               <td>0</td>
-              <td>0</td>
-              <td>0</td>
+              <td>0.50</td>
+              <td>0.25</td>
               <td>...</td>
               <td>0</td>
             </tr>
           </table>
           <br><br>
-          <h3>Knowledge Relatedness</h3>
+          <h3 class="w3-center">Knowledge Relatedness</h3>
           <math>
           	Knowledge Relatedness<sub>H05G06</sub> =
             Co-Classification Count<sub>H05H06</sub> / &#8730;(Total Count<sub>H05</sub> * Total Count<sub>G06</sub>)
-            =
-            1 / &#8730;(1 * 1)
-            =
-            1
           </math>
 
         </div>
 
-        <div id="slide5" class="slide">
-          <div id="network_graph"></div>
-        </div>
-
-        <div id="slide6" class="slide">
-          <div class="grid-container">
-            <div class="grid-item" style="border: 1px solid black !important;">
-              <h3>Internet Patents</h3>
-                <div style="border: 1px solid white; padding: 5px 5px 15px 5px; display: inline-block; position: relative;">
-                  <p>Patent 00000
-                    <br><br>
-                    <mark>CPC: G06</mark>
-                    <br><br>
-                    ...internet...
-                  </p>
-                  <br><br>
-                </div>
-              </div>
-              <div class="grid-item" style="border: 1px solid black !important;">
-                <h3>Knowledge Relatedness Matrix</h3>
-                <p>Assuming prediction threshold = 0.5</p>
-                <table class="w3-table" style="margin-left: auto !important; margin-right: auto !important; border: 1px solid white;">
-                  <tr class="w3-">
-                    <td></td>
-                    <td>A21</td>
-                    <td>...</td>
-                    <td>H04</td>
-                    <td><mark>H05</mark></td>
-                    <td>H06</td>
-                    <td>...</td>
-                    <td>Y04</td>
-                  </tr>
-                  <tr>
-                    <td>A21</td>
-                    <td>0</td>
-                    <td>...</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>...</td>
-                    <td>0</td>
-                  </tr>
-                  <tr>
-                    <td>:</td>
-                    <td>...</td>
-                    <td>...</td>
-                    <td>...</td>
-                    <td>...</td>
-                    <td>...</td>
-                    <td>...</td>
-                    <td>...</td>
-                  </tr>
-                  <tr>
-                    <td>G05</td>
-                    <td>0</td>
-                    <td>...</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>...</td>
-                    <td>0</td>
-                  </tr>
-                  <tr>
-                    <td><mark>G06</mark></td>
-                    <td>0</td>
-                    <td>...</td>
-                    <td>0</td>
-                    <td><mark>1</mark></td>
-                    <td>0</td>
-                    <td>...</td>
-                    <td>0</td>
-                  </tr>
-                  <tr>
-                    <td>G07</td>
-                    <td>0</td>
-                    <td>...</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>...</td>
-                    <td>0</td>
-                  </tr>
-                  <tr>
-                    <td>:</td>
-                    <td>...</td>
-                    <td>...</td>
-                    <td>...</td>
-                    <td>...</td>
-                    <td>...</td>
-                    <td>...</td>
-                    <td>...</td>
-                  </tr>
-                  <tr>
-                    <td>Y04</td>
-                    <td>0</td>
-                    <td>...</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>...</td>
-                    <td>0</td>
-                  </tr>
-                </table></br>
-                <h3>Prediction</h3>
-                <p>Internet technology will next expand towards <mark>H05</mark></p>
-              </div>
-            </div>
-        </div>
-
         <div id="slide7" class="slide">
-          <h3>Testing Predictions on ROC Curve</h3>
-          <div class="grid-container">
-            <div class="grid-item">
-              <mark><b>True Positive</b></mark><br>
-              Prediction appears in 7 years
-            </div>
-            <div class="grid-item">
-              <mark><b>False Positive</b></mark><br>
-              Prediction does not appear in 7 years
-            </div>
-            <div class="grid-item">
-              <mark><b>True Negative</b></mark><br>
-              A class that was not predicted does not appear in 7 years
-            </div>
-            <div class="grid-item">
-              <mark><b>False Negative</b></mark><br>
-              A class that was not predicted appears in 7 years
-            </div>
-          </div>
-          <br><br>
-          <div style="display: inline-block; position:relative; margin-top: 10px;">
-            <h3>Calculating accuracy of prediction</h3>
-            <p>Assuming prediction appears in 7 years:</p>
-            <ul>
-              <li>True Positive = 1</li>
-              <li>True Negative = 129 - 1 = 128</li>
-              <li>False Positive = 0</li>
-              <li>False Negative = 0</i>
-            </ul>
-            <math>
-              <mark>True Positive Rate</mark> = Number<sub>True Positive</sub> / Number<sub>True Positive</sub> + Number<sub>False Negative</sub> = 1 / 1 + 0 = 1
-              <br><br><mark>False Positive Rate</mark> = Number<sub>False Positive</sub> / Number<sub>True Negative</sub> + Number<sub>False Positive</sub> = 0 / 128 + 0 = 0
-            </math>
-          </div>
-
-          <div id="slide8" class="slide">
-            <h3>ROC Curve</h3>
-            <img src="images\Sheet 7.png">
-          </div>
-
-          <div id="slide9" class="slide" style="display:block;">
-            <h3>ROC Curve 1980</h3>
-            <img src="images/Sheet 7-1980.png">
-          </div>
-
-          <div id="slide10" class="slide" style="display:block;">
-            <h3>ROC Curve 1999</h3>
-            <img src="images/Sheet 7-1999.png">
-          </div>
-
-          <div id="slide11" class="slide" style="display:block;">
-            <h3>Mean AUC</h3>
-            <img src="images/Sheet 9.png">
-          </div>
-
+          <h1 class="w3-center" style="position:absolute; z-index:5;">Knowledge Relatedness Network (1980)</h1>
+          <div id="network_graph" style="position:absolute; display:block; z-index:0;"></div>
         </div>
 
+        <div id="slide8" class="slide">
+          <h1 class="w3-center" style="position:absolute; z-index:5;">Prediction Trajectories on Knowledge Relatedness Network (1980)</h1>
+          <div id="prediction_graph" style="position:absolute ; display:block; z-index:0;"></div>
+        </div>
 
+        <div id="slide9" class="slide">
+          <script type='text/javascript' src='https://prod-apnortheast-a.online.tableau.com/javascripts/api/viz_v1.js'></script><div class='tableauPlaceholder' style='width: 900px; height: 555px;'><object class='tableauViz' width='900' height='555' style='display:none;'><param name='host_url' value='https%3A%2F%2Fprod-apnortheast-a.online.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='&#47;t&#47;natashaann' /><param name='name' value='IRI&#47;Sheet7' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='showAppBanner' value='false' /></object></div>
+        </div>
+
+        <div id="slide10" class="slide">
+          <script type='text/javascript' src='https://prod-apnortheast-a.online.tableau.com/javascripts/api/viz_v1.js'></script><div class='tableauPlaceholder' style='width:  900px; height: 555px;'><object class='tableauViz' width='900' height='555' style='display:none;'><param name='host_url' value='https%3A%2F%2Fprod-apnortheast-a.online.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='&#47;t&#47;natashaann' /><param name='name' value='IRI&#47;Sheet9' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='showAppBanner' value='false' /></object></div>
+        </div>
+
+        <div id="slide11" class="slide">
+          <script type='text/javascript' src='https://prod-apnortheast-a.online.tableau.com/javascripts/api/viz_v1.js'></script><div class='tableauPlaceholder' style='width: 900px; height: 555px;'><object class='tableauViz' width='900' height='555' style='display:none;'><param name='host_url' value='https%3A%2F%2Fprod-apnortheast-a.online.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='&#47;t&#47;natashaann' /><param name='name' value='IRI&#47;Sheet10' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='showAppBanner' value='false' /></object></div>
+        </div>
+
+        <div id="slide12" class="slide">
+          <div style="position: absolute;text-align: center; top:50%;bottom:50%; display:inline-block;">
+            <h1 class="w3-jumbo w3-center"><span>Conclusion</span></h1>
+            <p>For more details, see <a href="https://tech-predict.humspace.ucla.edu/">https://tech-predict.humspace.ucla.edu/</a></p>
+          </div>
+        </div>
 
         <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
         <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
@@ -563,17 +438,18 @@
         <div class="w3-content w3-justify w3-text-grey w3-padding-64">
           <h3 class="w3-text-light-grey">AUC Graphs 1980-2018</h3>
           <hr style="width:200px" class="w3-opacity">
-          <script type='text/javascript' src='https://prod-apnortheast-a.online.tableau.com/javascripts/api/viz_v1.js'></script><div class='tableauPlaceholder datavis' style='width: 1080px; height: 555px;'><object class='tableauViz' width='1080' height='555' style='display:none;'><param name='host_url' value='https%3A%2F%2Fprod-apnortheast-a.online.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='&#47;t&#47;natashaann' /><param name='name' value='IRI&#47;Sheet7' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='showAppBanner' value='false' /></object></div>
+          <div class='tableauPlaceholder' id='viz1591979249966' style='position:relative; width: 100%; height: auto;'><noscript><a href='https:&#47;&#47;tech-predict.humspace.ucla.edu&#47;'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;kl&#47;kleinrock&#47;Sheet7&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='kleinrock&#47;Sheet7' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;kl&#47;kleinrock&#47;Sheet7&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1591979249966');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
        </div>
 
        <div class="w3-content w3-justify w3-text-grey w3-padding-64">
          <h3 class="w3-text-light-grey">Mean AUC</h3>
          <hr style="width:200px" class="w3-opacity">
-         <script type='text/javascript' src='https://prod-apnortheast-a.online.tableau.com/javascripts/api/viz_v1.js'></script><div class='tableauPlaceholder datavis' style='width: 98%; height: 100%;'><object class='tableauViz' width='1080' height='555' style='display:none;'><param name='host_url' value='https%3A%2F%2Fprod-apnortheast-a.online.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='&#47;t&#47;natashaann' /><param name='name' value='IRI&#47;Sheet8' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='showAppBanner' value='false' /></object></div>
+         <div class='tableauPlaceholder' id='viz1591979291996' style='position: absolute; width: 100%; height: auto;'><noscript><a href='https:&#47;&#47;tech-predict.humspace.ucla.edu&#47;'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;kl&#47;kleinrock&#47;Sheet9&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='kleinrock&#47;Sheet9' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;kl&#47;kleinrock&#47;Sheet9&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1591979291996');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
       </div>
 
 
   <script src="network.js"></script>
+  <script src="prediction.js"></script>
   <script src="slideshow.js"></script>
 </body>
 </html>

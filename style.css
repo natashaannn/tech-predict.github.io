@@ -68,13 +68,20 @@ mark {
   padding: 0px 5px 0px 3px;
 }
 
+.grid-hover-item {
+  opacity: 0.5;
+}
+
+.grid-hover-item:hover {
+  opacity: 1;
+}
+
+.grid-item
+
 .w3-ul {
   border-bottom-color: white;
 }
 
-#slide3 {
-  font-size: 12px;
-}
 
 table {
   max-width:98%;
@@ -86,10 +93,6 @@ table {
   border: 1px solid white;
   text-align: center;
   padding: 5px;
-}
-
-#slide4 {
-  display: block;
 }
 
 
@@ -125,10 +128,16 @@ text-shadow: 1px 1px 2px black;
 }
 
 .tooltip {
+position: absolute !important;
+display: block !important;
 font-family: monospace;
-background: white;
+background: white !important;
 color: black;
 border-radius: 5px;
 padding: 10px;
-position: absolute;
+z-index: 10;
+}
+
+.clear {
+    clear: both;
 }
